@@ -1,5 +1,12 @@
+// ===========================
+// Mini Project: System Checker
+// ===========================
+
+// Import required core modules
 const os = require('os');
 const path = require('path');
+
+// Get current user and system info
 const user = os.userInfo();
 const uptime = os.uptime();
 
@@ -11,4 +18,4 @@ You're using a ${os.type()} system on ${os.platform()} platform.
 Your home directory path is: ${user.homedir}
 `;
 
-console.log(report);
+console.log(report)
